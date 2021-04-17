@@ -1,0 +1,50 @@
+$black: #000;
+$white: #fff;
+$text-center: center;
+$width: 100%;
+@import "./header";
+.prod-body {
+    padding: 25px !important;
+    position: relative !important;
+    margin: 3% 0;
+    .add-to-cart {
+        position: absolute;
+        bottom: -30px;
+        left: 0;
+        right: 0;
+        margin: auto;
+        width: 90%;
+        border: 1px solid $black;
+        background: none;
+        padding: 5px;
+    }
+}
+
+.modal-prod-img,
+.prod-imgs {
+    height: 250px;
+    width: 100%;
+    padding: 25px 0;
+}
+
+.added-item {
+    margin: auto !important;
+}
+
+.footer {
+    background: black;
+    text-align: center;
+    color: white;
+    padding: 2% 0;
+    margin-top: 5%;
+}
+
+//For Screens smaller than 420px
+@media only screen and (max-width: 420px) {
+    body .navbar {
+        padding: 3%;
+    }
+    .footer {
+        margin-top: 10%;
+    }
+}
